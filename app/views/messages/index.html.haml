@@ -6,10 +6,10 @@
       %ul.side-header__box__menu
         %li.side-header__box__menu__new-group
           =link_to('/kari') do
-            %i.fa.fa-edit{"aria-hidden" => "true"}
+            %i.fa.fa-edit{'aria-hidden': :true}
         %li.side-header__box__menu__edit-user
           =link_to('/kari') do
-            %i.fa.fa-cog{"aria-hidden" => "true"}
+            %i.fa.fa-cog{'aria-hidden': :true}
   .side-groups
     =link_to('/kari') do
       .group
@@ -53,11 +53,11 @@
       %p.message__first-message
         グループ1のメッセージ２
   .form
-    %form#new.new-message{"accept-charset" => "UTF-8", :method => "post"}
+    %form#new.new-message{'accept-charset': :'UTF-8', method: :post}
       .input-box
-        %input.input-box__text{:name => "message-content", :placeholder => "type a message", :type => "text"}/
+        %input.input-box__text{name: :'message-content', placeholder: :'type a message', type: :text}/
         %label.input-box__image
           %i.fa.fa-image
             / ::before
-          %input.input-box__image__file{:type => "file"}/
-      %input.submit-btn{:type => "submit", :value => "Send"}/
+          %input.input-box__image__file{type: :file}/
+      %input.submit-btn{type: :submit, value: :Send}/

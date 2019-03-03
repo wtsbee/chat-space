@@ -2,13 +2,13 @@
   .side-header
     .side-header__box
       %p.side-header__box__user-name
-        test-user
+        = current_user.name
       %ul.side-header__box__menu
         %li.side-header__box__menu__new-group
           =link_to('/kari') do
             %i.fa.fa-edit{'aria-hidden': :true}
         %li.side-header__box__menu__edit-user
-          =link_to('/kari') do
+          =link_to edit_user_path(current_user) do
             %i.fa.fa-cog{'aria-hidden': :true}
   .side-groups
     =link_to('/kari') do

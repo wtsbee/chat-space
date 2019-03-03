@@ -2,3 +2,8 @@
 @import "./variable";
 @import "font-awesome";
 @import "./chatspace";
+@import "modules/user";
+
+// colors.scssとflash.scssをインポート
+@import "config/colors";
+@import "modules/flash";

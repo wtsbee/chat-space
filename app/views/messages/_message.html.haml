@@ -1,16 +1,11 @@
-    .message
-      .message__upper-info
-        %p.message__upper-info__talker
-          sample_name
-        %p.message__upper-info__date
-          2019/02/16(Sat) 15:00:00
-      %p.message__first-message
-        グループ1のメッセージ１
-    .message
-      .message__upper-info
-        %p.message__upper-info__talker
-          sample_name
-        %p.message__upper-info__date
-          2019/02/16(Sat) 16:00:00
-      %p.message__first-message
-        グループ1のメッセージ２
+.message
+  .message__upper-info
+    %p.message__upper-info__talker
+      = message.user.name
+    %p.message__upper-info__date
+      = message.created_at.strftime("%Y/%m/%d %H:%M")
+  - if message.content.present?
+    %p.message__first-message
+      = message.content
+  = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
+

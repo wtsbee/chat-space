@@ -35,7 +35,7 @@ $(function() {
     .done(function(data){
       var html = buildHTML(data);
       $('.messages').append(html);
-      $('.input-box__text').val('');
+      $('#new')[0].reset();
     })
     .fail(function(){
       alert('error');

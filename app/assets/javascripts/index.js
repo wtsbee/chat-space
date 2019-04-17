@@ -66,7 +66,6 @@ var member_list = $("#chat-group-users");
   });
   $(document).on("click", ".user-search-remove", function() {
     var id = "#" + $(this).parent()[0].getAttribute("id");
-    console.log(id);
     $(id).remove();
   });
 });

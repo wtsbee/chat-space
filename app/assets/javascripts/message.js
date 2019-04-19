@@ -55,8 +55,7 @@ $(function() {
     //カスタムデータ属性を利用し、ブラウザに表示されている最新メッセージのidを取得
     var last_message_id = $('.message').last().data('id');
     var href = document.location.href;
-    var url = href.split('messages')[0] + "api/messages"
-    console.log(last_message_id);
+    var url = href.split('messages')[0] + "api/messages";
     if (href.match(/messages/)) {
       $.ajax({
         //ルーティングで設定した通りのURLを指定

@@ -18,4 +18,6 @@
 
 public/uploads/*
 
+!public/uploads/message/image/16
+
 config/secrets.yml

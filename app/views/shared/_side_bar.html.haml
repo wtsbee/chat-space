@@ -34,9 +34,10 @@
   .side-groups
     / - current_user.groups.each do |group|
       .group
+        test
         / = link_to group_messages_path(group) do
-          %p.group__group-name
+          / %p.group__group-name
             / = group.name
-          %p.group__first-message
+          / %p.group__first-message
             / = group.show_last_message
 

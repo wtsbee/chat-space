@@ -43,7 +43,7 @@ $(function() {
       $('#new')[0].reset();
     })
     .fail(function(){
-      alert('error');
+      alert('メッセージを入力して下さい');
     })
     .always(function(data){
       $('.submit-btn').prop('disabled', false);

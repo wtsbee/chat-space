@@ -14,6 +14,7 @@ pid "#{app_path}/tmp/pids/unicorn.pid"
 listen 3000
 
 #エラーのログを記録するファイルを指定
+listen "#{app_path}/tmp/sockets/unicorn.sock"
 stderr_path "#{app_path}/log/unicorn.stderr.log"
 
 #通常のログを記録するファイルを指定

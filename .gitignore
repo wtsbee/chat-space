@@ -24,4 +24,4 @@ public/uploads/*
 # public/uploads/message/image/*
 # !public/uploads/message/image/16
 
-# config/secrets.yml
+config/secrets.yml

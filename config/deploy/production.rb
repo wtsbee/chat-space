@@ -59,16 +59,4 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
-
-server '3.114.64.228', user: 'ec2-user', roles: %w{app db web}
-
-server '3.114.64.228',
-  user: 'ec2-user',
-  roles: %w{app db web},
-  ssh_options: {
-    user: 'ec2-user', # overrides user setting above
-    keys: %w(~/.ssh/wts123.pem),
-    forward_agent: true,
-    auth_methods: %w(publickey)
-    # password: "please use keys"
-  }
+server '3.113.172.84', user: 'ec2-user', roles: %w{app db web}
